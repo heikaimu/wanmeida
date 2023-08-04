@@ -1,0 +1,136 @@
+@use 'sass:math'; //引入math函数
+
+$size: (
+  sm: phone,
+  md: tab-port,
+  lg: tab-port-up
+);
+
+$nums: 1, 2 ,3, 4, 5, 6, 7, 8;
+
+@each $num in $nums {
+  // col
+  $percentage: (1 / $num) * 100;
+  .col-#{$num} {
+    flex: 0 0 $percentage * 1%;
+    max-width: $percentage * 1%;
+  }
+
+  // 间距
+  $offset: #{$num / 2}rem;
+  .gutter-#{$num} {
+    margin-left: -$offset;
+    margin-right: -$offset;
+    &>[class^="col-"] {
+      padding: $offset;
+    }
+  }
+
+  // margin
+  .m-#{$num} {
+    margin: #{$num}rem;
+  }
+  .mt-#{$num} {
+    margin-top: #{$num}rem;
+  }
+  .mr-#{$num} {
+    margin-right: #{$num}rem;
+  }
+  .mb-#{$num} {
+    margin-bottom: #{$num}rem;
+  }
+  .ml-#{$num} {
+    margin-left: #{$num}rem;
+  }
+
+  // padding
+  .p-#{$num} {
+    padding: #{$num}rem;
+  }
+  .pt-#{$num} {
+    padding-top: #{$num}rem;
+  }
+  .pr-#{$num} {
+    padding-right: #{$num}rem;
+  }
+  .pb-#{$num} {
+    padding-bottom: #{$num}rem;
+  }
+  .pl-#{$num} {
+    padding-left: #{$num}rem;
+  }
+  .px-#{$num} {
+    padding-left: #{$num}rem;
+    padding-right: #{$num}rem;
+  }
+  .py-#{$num} {
+    padding-top: #{$num}rem;
+    padding-bottom: #{$num}rem;
+  }
+}
+
+@each $sizeKey,$sizeVal in $size {
+  @include respond($sizeVal) {
+    @each $num in $nums {
+      // col
+      $percentage: (1 / $num) * 100;
+      .col-#{$sizeKey}-#{$num} {
+        flex: 0 0 $percentage * 1%;
+        max-width: $percentage * 1%;
+      }
+  
+      // 间距
+      $offset: #{$num / 2}rem;
+      .gutter-#{$sizeKey}-#{$num} {
+        margin-left: -$offset;
+        margin-right: -$offset;
+        &>[class^="col-"] {
+          padding: $offset;
+        }
+      }
+  
+      // margin
+      .m-#{$sizeKey}-#{$num} {
+        margin: #{$num}rem;
+      }
+      .mt-#{$sizeKey}-#{$num} {
+        margin-top: #{$num}rem;
+      }
+      .mr-#{$sizeKey}-#{$num} {
+        margin-right: #{$num}rem;
+      }
+      .mb-#{$sizeKey}-#{$num} {
+        margin-bottom: #{$num}rem;
+      }
+      .ml-#{$sizeKey}-#{$num} {
+        margin-left: #{$num}rem;
+      }
+  
+      // padding
+      .p-#{$sizeKey}-#{$num} {
+        padding: #{$num}rem;
+      }
+      .pt-#{$sizeKey}-#{$num} {
+        padding-top: #{$num}rem;
+      }
+      .pr-#{$sizeKey}-#{$num} {
+        padding-right: #{$num}rem;
+      }
+      .pb-#{$sizeKey}-#{$num} {
+        padding-bottom: #{$num}rem;
+      }
+      .pl-#{$sizeKey}-#{$num} {
+        padding-left: #{$num}rem;
+      }
+      .px-#{$sizeKey}-#{$num} {
+        padding-left: #{$num}rem;
+        padding-right: #{$num}rem;
+      }
+      .py-#{$sizeKey}-#{$num} {
+        padding-top: #{$num}rem;
+        padding-bottom: #{$num}rem;
+      }
+    }
+  }
+}
+

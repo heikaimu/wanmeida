@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <title>首11页</title>
+  <meta name="description" content="这是一个描述" />
+  <meta name="keywords" content="这是一些关键字" />
+  <link rel="stylesheet" href="./style/swiper.min.css" />
+  <link rel="stylesheet" href="./style/animation.css" />
+  <link rel="stylesheet" href="./style/bootstrap.table.css" />
+  <link rel="stylesheet" href="./fonts/iconfont.css" />
+  <link rel="stylesheet" href="./style/fullPage.css">
+  <link rel="stylesheet" href="./style/app.css" />
+  <script src="./js/brower.js"></script>
+</head>
+
+<body id="app">
+
+  <div id="header" class="header">
+
+    <a href="" class="header__logo">
+      <img class="white" src="./images/logo.png" alt="">
+      <img class="light" src="./images/logo-light.png" alt="">
+    </a>
+  
+    <div class="header__mobile-open" data-nav-open>
+      <span class="iconfont icon-daohang"></span>
+    </div>
+  
+    <div class="header__main" data-nav-wrapper>
+  
+      <div class="header__mobile-close" data-nav-close>
+        <span class="iconfont icon-shanchu"></span>
+      </div>
+  
+      <nav class="header__nav">
+        <a href="" class="active">首页</a>
+        <a href="">集团介绍</a>
+        <a href="">企业文化</a>
+        <a href="">分公司展示</a>
+        <a href="">业务领域</a>
+        <a href="">联系我们</a>
+      </nav>
+  
+      <nav class="header__share">
+        <a href="">
+          <span class="iconfont icon-douyin"></span>
+        </a>
+        <a href="">
+          <span class="iconfont icon-weixin1"></span>
+        </a>
+      </nav>
+  
+    </div>
+  
+  </div>
+
+  <div id="fullpage" class="fullpage-container">
+
+    <!-- 第一屏 -->
+    <div class="section section--1">
+      <div class="home-banner-box">
+        <div class="swiper home-banner" id="homeBanner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/banner.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="home-button">
+          <div class="button button--prev">
+            <span class="iconfont icon-jiantou_qiehuanzuo" id="homeBannerPrev"></span>
+          </div>
+          <div class="button button--next">
+            <span class="iconfont icon-jiantou_qiehuanyou" id="homeBannerNext"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第2屏 -->
+    <div class="section section--2">
+      <div class="section__content px-2">
+        <div class="heading-box">
+          <h2 class="heading">
+            <p class="heading--main">
+              集团介绍
+              <img src="./images/title-company.png" alt="">
+            </p>
+            <p class="heading--sub">
+              推动行业发展，改变行业格局
+            </p>
+          </h2>
+        </div>
+
+        <div class="flex gutter-2 pt-6">
+          <div class="col-2">
+            <div class="intro-content">
+              <p class="desc">
+                万美达集团源于2012年，11年专注于建筑企业服务领域;秉持“推动行业发展，改变行业格局，共建资质服务新生态”的经营理念，紧跟主管部门政策指引，致力于为建筑企业提供更专业、更便捷、成本更低的服务。我们郑重承诺:
+                永远严守企业信息机密，永远快捷无忧办理; 永远高效优质服务;让客户省时、省钱、省心是我们永远的追求。
+                万美达总部位于成都市青羊区鼓楼国际37层，办公面积占地1500余平方米;由商务、客服、技术、职能等多个团队共同组成公司的服务体系。其中商务团队共有500多人，坚持以最专业的服务为客户解决难题。
+              </p>
+
+              <div class="summary pt-6">
+                <div class="summary__card">
+                  <p class="main">2012<span>年</span></p>
+                  <p class="sub">企业成立于</p>
+                </div>
+                <span class="line"></span>
+                <div class="summary__card">
+                  <p class="main">11<span>年</span></p>
+                  <p class="sub">致力于本行业</p>
+                </div>
+                <span class="line"></span>
+                <div class="summary__card">
+                  <p class="main">1500<span>平米</span></p>
+                  <p class="sub">企业成立于</p>
+                </div>
+                <span class="line"></span>
+                <div class="summary__card">
+                  <p class="main">500<span>+</span></p>
+                  <p class="sub">企业成立于</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="intro-img">
+              <img src="./images/img-5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第3屏 -->
+    <div class="section section--3">
+      <div class="section__content px-2">
+        <div class="heading-box">
+          <h2 class="heading">
+            <p class="heading--main">
+              企业文化
+              <img src="./images/title-culture.png" alt="">
+            </p>
+            <p class="heading--sub">
+              一站式建筑企业服务商
+            </p>
+          </h2>
+        </div>
+
+        <div class="culture">
+
+          <div class="culture__left">
+            <div class="culture-main">
+              <div class="culture-heading pb-6 pt-2">
+                <div class="company-price">
+                  <div class="icon">
+                    <img src="./images/zuanshi.png" alt="">
+                  </div>
+                  <div class="info">
+                    <p class="text1">集团价值观 </p>
+                    <p class="text2">共同成长 共同分享</p>
+                  </div>
+                </div>
+                <div class="company-feature">
+                  <div class="company-feature__card">
+                    <p>
+                      <span>专注：</span>
+                      专注于建筑领域服务
+                    </p>
+                    <p>
+                      <span>诚信：</span>
+                      诚信经营
+                    </p>
+                  </div>
+                  <div class="company-feature__card">
+                    <p>
+                      <span>创新：</span>
+                      创新的业务模式保障
+                    </p>
+                    <p>
+                      <span>共赢：</span>
+                      多方共赢
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/img-4.png" alt="">
+            </div>
+          </div>
+
+          <div class="culture__right">
+            <div class="culture-sub">
+              <img src="./images/img-3.png" alt="">
+              <ul class="list">
+                <li>
+                  为客户提供优质的产品和服务
+                </li>
+                <li>
+                  为员工创造良好的工作环境和发展机会
+                </li>
+                <li>
+                  为建筑行业做出贡献
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 第4屏 -->
+    <div class="section section--4">
+      <div class="section__content px-2">
+        <div class="heading-box">
+          <h2 class="heading">
+            <p class="heading--main">
+              核心业务
+              <img src="./images/title-service.png" alt="">
+            </p>
+            <p class="heading--sub">
+              致力于为建筑企业提供更专业、更便捷、成本更低的服务
+            </p>
+          </h2>
+        </div>
+
+        <ul class="drawer-list">
+          <li>
+            <div class="business-card active">
+              <div class="business-card__cover">
+                <img src="./images/img-6.png" alt="">
+              </div>
+              <div class="normal-info">
+                <h2>万美</h2>
+                <p>建筑业企业服务平台</p>
+                <a href="" class="btn">
+                  <span class="iconfont icon-youjiantou"></span>
+                </a>
+              </div>
+              <div class="active-info">
+                <img src="./images/logo-light.png" alt="">
+                <p>万美达总部位于成都市青羊区鼓楼国际37层，办公面积占地1500余平方米;由商务、客服、技术、职能等多个团队... 公司的服务体系。</p>
+                <a href="" class="btn">
+                  <span class="iconfont icon-youjiantou"></span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="business-card">
+              <div class="business-card__cover">
+                <img src="./images/img-1.png" alt="">
+              </div>
+              <div class="normal-info">
+                <h2>万美</h2>
+                <p>建筑业企业服务平台</p>
+                <a href="" class="btn">
+                  <span class="iconfont icon-youjiantou"></span>
+                </a>
+              </div>
+              <div class="active-info">
+                <img src="./images/logo-light.png" alt="">
+                <p>万美达总部位于成都市青羊区鼓楼国际37层，办公面积占地1500余平方米;由商务、客服、技术、职能等多个团队... 公司的服务体系。</p>
+                <a href="" class="btn">
+                  <span class="iconfont icon-youjiantou"></span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="business-card">
+              <div class="business-card__cover">
+                <img src="./images/img-2.png" alt="">
+              </div>
+              <div class="normal-info">
+                <h2>万美</h2>
+                <p>建筑业企业服务平台</p>
+                <a href="" class="btn">
+                  <span class="iconfont icon-youjiantou"></span>
+                </a>
+              </div>
+              <div class="active-info">
+                <img src="./images/logo-light.png" alt="">
+                <p>万美达总部位于成都市青羊区鼓楼国际37层，办公面积占地1500余平方米;由商务、客服、技术、职能等多个团队... 公司的服务体系。</p>
+                <a href="" class="btn">
+                  <span class="iconfont icon-youjiantou"></span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <!-- 第5屏 -->
+    <div class="section section--5">
+      <div class="section__content px-2">
+        <div class="heading-box">
+          <h2 class="heading">
+            <p class="heading--main">
+              服务案例
+              <img src="./images/title-case.png" alt="">
+            </p>
+            <p class="heading--sub">
+              坚持以最专业的服务为客户解决难题
+            </p>
+          </h2>
+        </div>
+
+        <div class="service-wrapper pt-6">
+          <ul class="service-list">
+            <li class="item">
+              <img src="./images/s-1.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-2.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-3.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-4.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-5.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-6.png" alt="">
+            </li>
+          </ul>
+          <ul class="service-list">
+            <li class="item">
+              <img src="./images/s-7.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-8.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-9.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-10.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-11.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-12.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-13.png" alt="">
+            </li>
+          </ul>
+          <ul class="service-list">
+            <li class="item">
+              <img src="./images/s-14.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-15.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-16.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-17.png" alt="">
+            </li>
+            <li class="item">
+              <img src="./images/s-18.png" alt="">
+            </li>
+            <li class="item">
+              <p>更多客户</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 第6屏 -->
+    <div class="section fp-auto-height">
+      <!-- footer -->
+      <footer class="footer pt-4 pb-4">
+        <p>总部地址: 成都市青羊区鼓楼国际36/37层 联系电话:13219089788 </p>
+        <p>COPYRIGHT(C)2021 万美达企业服务集团公司 版权所有ALL RIGHTS RES 蜀ICP备17044231号-5</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/countUp.umd.js"></script>
+  <script src="./js/fullPage.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/wow.js"></script>
+  <script src="./js/jquery.extends.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+.header {
+  height: 10rem;
+  padding: 0 5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(tab-land) {
+    padding: 1rem 2rem;
+  }
+
+  &__mobile-open {
+    span {
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    display: none;
+
+    @include respond(tab-land) {
+      display: block;
+    }
+  }
+
+  &__mobile-close {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    span {
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    display: none;
+
+    @include respond(tab-land) {
+      display: block;
+    }
+  }
+
+  &__logo {
+    img {
+      display: block;
+
+      &.white {
+        display: block;
+      }
+
+      &.light {
+        display: none;
+      }
+
+      @include respond(tab-land) {
+        width: auto;
+        height: 4rem;
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    transition: .3s ease-in-out;
+
+    @include respond(tab-land) {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 999;
+      background-color: #206bec;
+      justify-content: center;
+      transform: translate3d(-100%, 0, 0);
+
+      &.active {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+
+    @include respond(tab-land) {
+      display: block;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 2rem;
+      color: #fff;
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 3vw;
+
+        @include respond(tab-land) {
+          margin-right: 0;
+          margin: 3rem 0;
+        }
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+        border-bottom: 2px solid #fff;
+        position: absolute;
+        bottom: 0;
+        transition: 0.3s ease-in-out;
+      }
+
+      &::after {
+        left: 50%;
+      }
+
+      &::before {
+        right: 50%;
+      }
+
+      &:hover,
+      &.active {
+        &::after,
+        &::before {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  &__share {
+    display: flex;
+    padding-left: 3vw;
+
+    @include respond(tab-land) {
+      position: absolute;
+      bottom: 3rem;
+      padding-left: 0;
+    }
+
+    a {
+      width: 3.8rem;
+      height: 3.8rem;
+      border-radius: 50%;
+      background-color: rgba($color: #fff, $alpha: 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 1.8rem;
+
+      @include respond(tab-land) {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+
+        @include respond(tab-land) {
+          margin-right: 3rem;
+        }
+      }
+
+      &:hover {
+        outline: 2px solid #fff;
+      }
+    }
+  }
+
+  &.light &__mobile-open {
+    span {
+      color: #111;
+    }
+  }
+
+  &.light {
+    background-color: #fff;
+  }
+
+  &.light &__logo {
+    img {
+      &.white {
+        display: none;
+      }
+
+      &.light {
+        display: block;
+      }
+    }
+  }
+
+  &.light &__nav {
+    a {
+      color: #111;
+
+      &::after,
+      &::before {
+        border-bottom: 2px solid #111;
+
+        @include respond(tab-land) {
+          border-bottom: 2px solid #fff;
+        }
+      }
+
+      @include respond(tab-land) {
+        color: #fff;
+      }
+    }
+  }
+
+  &.light &__share {
+    a {
+      outline: 2px solid #206bec;
+      color: #206bec;
+
+      &:hover {
+        background-color: rgba($color: #206bec, $alpha: 0.3);
+      }
+    }
+  }
+}

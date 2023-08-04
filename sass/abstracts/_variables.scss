@@ -1,0 +1,69 @@
+// 色彩
+$color-primary: #471900;
+
+$color-secondary: #C44E2A;
+
+$color-title: #2f2f2f;
+$color-content: #5a5a5a;
+$color-border: #e5e5e5;
+
+$color-grey-dark: #777;
+
+$color-white: #ffffff;
+$color-black: #141414;
+$color-yellow: #fff06c;
+$color-yellow-light: #ffd86b;
+$color-error: #f56c6c;
+$color-success: #67c23a;
+$color-warning: #e6a23c;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// GRID
+$grid-width: 140rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 5rem;
+
+// web nav
+$nav1-size: 1.4rem;
+$nav1-color: $color-white;
+$nav1-color-active: #ffde00;
+$nav1-bg: transparent;
+$nav1-bg-active: #af2d05;
+
+$nav2-wrapper: rgba(255, 255, 255, 0.7);
+$nav2-size: 1.3rem;
+$nav2-color: $color-title;
+$nav2-color-active: $color-white;
+$nav2-bg: transparent;
+$nav2-bg-active: #a95c4d;
+
+$nav3-wrapper: $color-white;
+$nav3-size: 1.3rem;
+$nav3-color: $color-title;
+$nav3-color-active: $color-white;
+$nav3-bg: transparent;
+$nav3-bg-active: $color-primary;
+
+// side nav
+$side-nav1-size: 1.8rem;
+$side-nav1-color: #111111;
+$side-nav1-color-active: #A52B05;
+$side-nav1-bg: transparent;
+$side-nav1-bg-active: transparent;
+
+$side-nav2-wrapper: $color-white;
+$side-nav2-size: 1.6rem;
+$side-nav2-color: $color-content;
+$side-nav2-color-active: $color-white;
+$side-nav2-bg: $color-white;
+$side-nav2-bg-active: #A95C4D;
+
+$side-nav3-wrapper: $color-white;
+$side-nav3-size: 1.8rem;
+$side-nav3-color: $color-title;
+$side-nav3-color-active: $color-white;
+$side-nav3-bg: transparent;
+$side-nav3-bg-active: $color-primary;

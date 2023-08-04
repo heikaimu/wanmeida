@@ -1,0 +1,251 @@
+.inner-heading {
+  background: #ffffff;
+  box-shadow: 0px 9px 24px 0px rgba(0, 0, 0, 0.04);
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+
+  &__content {
+    line-height: 1;
+    align-items: flex-end;
+
+    .main {
+      font-size: 3.6rem;
+      color: #111;
+
+      strong {
+        color: #206bec;
+      }
+    }
+
+    .sub {
+      font-size: 1.8rem;
+      color: #999999;
+    }
+  }
+
+  &__nav {
+    a {
+      font-size: 1.6rem;
+      color: #ccc;
+      padding: 4px 2rem;
+      border-radius: 100px;
+      border: 1px solid #ccc;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      &:hover,
+      &.active {
+        background-color: #0D4CCD;
+        background-color: #0D4CCD;
+        border: 1px solid ;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.introduce {
+  article {
+    p {
+      font-size: 1.6rem;
+      color: #111;
+      line-height: 2;
+    }
+  }
+}
+
+.feature {
+  height: 33rem;
+  padding: 5rem 10rem;
+  background: url(../images/img-7.png) no-repeat bottom center / cover;
+
+  @include respond(phone) {
+    height: auto;
+    padding: 3rem 5rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      display: block;
+    }
+
+    .line {
+      display: block;
+      width: 1px;
+      height: 4rem;
+      border-left: 1px solid #f9f9f9;
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+    .item {
+    }
+  }
+}
+
+.time-tree {
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+
+  @include respond(phone) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  &__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #206bec;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+      @include respond(phone) {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        border-left: 1px dashed #206bec;
+      }
+    }
+    
+    .item {
+      @include respond(phone) {
+        width: 50%;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .item:nth-child(even) {
+      .tree-card {
+        transform: translateY(0);
+        padding-left: 1rem;
+      }
+    }
+
+    .item:nth-child(odd) {
+      .tree-card {
+        transform: translateY(-100%);
+        @include respond(phone) {
+          transform: translateY(0);
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.main-company-section {
+  article {
+    p {
+      font-size: 1.8rem;
+      color: #111;
+      line-height: 2;
+    }
+  }
+}
+
+.env-culture {
+  background: url(../images/bg-6.png) no-repeat center center / cover;
+}
+
+.contact-us {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .line {
+      width: 1px;
+      background: linear-gradient(#fff, #77a6f8, #fff);
+
+      @include respond(tab-port) {
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(to right, #fff, #77a6f8, #fff);
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.wanmeida {
+
+  article {
+    p {
+      font-size: 1.6rem;
+      color: #111;
+      line-height: 2;
+    }
+  }
+}
+
+.lingyu {
+
+  &__wrapper {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    .line {
+      width: 1px;
+      background: #D1D1D1;
+    }
+  }
+
+  .title {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #111;
+  }
+}
+
+.jianbangbang {
+  background: url(../images/bg-7.png) no-repeat center center / cover;
+
+  .desc {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #111;
+  }
+}

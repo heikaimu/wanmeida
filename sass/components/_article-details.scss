@@ -1,0 +1,75 @@
+
+.article-details {
+  background-color: $color-white;
+
+  @include respond(tab-port) {}
+
+  &__heading {
+    padding: 2rem 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #A52B05;
+    text-align: center;
+
+    @include respond(tab-port) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__describe {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: #FFF6DE;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__tag {
+    font-size: 1.4rem;
+    color: #471900;
+    margin: 0 1rem;
+
+    &--views {}
+  }
+
+  &__content {
+    p {
+      font-size: 1.6rem;
+      line-height: 1.8;
+      color: $color-title;
+    }
+
+    img {
+      display: inline-block;
+      max-width: 100%;
+      margin: 2rem 0;
+    }
+  }
+}
+
+
+.article-prev-next {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    display: block;
+    padding: 0.5rem 3rem;
+    background-color: #FFF6DE;
+    font-size: 1.6rem;
+    color: #471900;
+
+    &.prev {
+      content: "<<";
+    }
+
+    &.next {
+      content: ">>";
+    }
+  }
+}

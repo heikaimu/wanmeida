@@ -1,0 +1,70 @@
+// 面包屑
+.custom-breadcrumb {
+  @include flex-row-sb;
+  height: 5.8rem;
+  background: url(../images/line-3.png) no-repeat bottom center / 100%;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+
+  .title {
+    font-size: 2rem;
+    color: $color-primary;
+    font-weight: 900;
+    position: relative;
+  }
+
+  .breadcrumb-navs {
+    display: flex;
+    align-items: center;
+
+    .pos {
+      font-size: 1.4rem;
+      color: $color-title;
+      margin-right: 1rem;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        @include iconfont;
+        content: "\e60e";
+        font-size: 1.4rem;
+        color: $color-primary;
+        margin-right: 4px;
+      }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+
+      a {
+        font-size: 1.4rem;
+        color: $color-title;
+        transition: 0.3s;
+
+        &::before {
+          font-family: "iconfont";
+          content: "\e63d";
+          margin-right: 0.8rem;
+          margin-left: 0.5rem;
+        }
+
+        &:first-child {
+          &::before {
+            display: none;
+          }
+        }
+
+        &:hover {
+          color: $color-primary;
+
+          &::before {
+            color: $color-title;
+          }
+        }
+      }
+    }
+  }
+}

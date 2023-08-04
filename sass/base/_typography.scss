@@ -1,0 +1,118 @@
+@font-face {
+  font-family: yh-bold;
+  src: url("../font-family/MSYH_Bold.ttf");
+}
+
+@font-face {
+  font-family: yh;
+  src: url("../font-family/MSYH_Regular.ttf");
+}
+
+@font-face {
+  font-family: tm;
+  src: url("../font-family/Times_Roman.ttf");
+}
+
+@font-face {
+  font-family: tm-bold;
+  src: url("../font-family/Times_Bold.ttf");
+}
+
+body {
+  // font-family: yh;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  // font-family: fontHeavy;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: $grid-width;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+@include respond(phone) {
+  .sm\:hidden {
+    display: none;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@include respond(tab-port) {
+  .md\:hidden {
+    display: none;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@include respond(tab-port-up) {
+  .lg\:hidden {
+    display: none;
+  }
+  .container {
+    padding: 0 3rem;
+  }
+}

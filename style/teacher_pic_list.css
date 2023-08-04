@@ -1,0 +1,105 @@
+.inner-card-list {
+  padding: 30px 40px 0 40px;
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 1024px) {
+  .inner-card-list {
+    padding: 30px 20px 0 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .inner-card-list {
+    padding: 30px 10px 0 10px;
+  }
+}
+.teacher-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.teacher-list__item {
+  width: 20%;
+  padding: 20px;
+}
+@media only screen and (max-width: 1750px) {
+  .teacher-list__item {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .teacher-list__item {
+    width: 33.33%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .teacher-list__item {
+    width: 33.33%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .teacher-list__item {
+    width: 50%;
+    padding: 40px 10px;
+  }
+}
+.teacher-card {
+  padding: 4px;
+  border-radius: 2px;
+  background-color: #f9f9f9;
+  /* border: 1px solid #d5d5d5; */
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.teacher-card:hover {
+  transform: translate3d(0, -20px, 0);
+  background-color: #f1fdff;
+  border: 1px solid #6fd3ff;
+  box-shadow: 0px 5px 38px 0px rgba(0, 0, 0, 0.35);
+}
+.teacher-card:hover::after {
+  background-color: #056dc3;
+}
+.teacher-card__image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 767px) {
+  .teacher-card__image {
+    height: 190px;
+  }
+}
+.teacher-card__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+.teacher-card__info {
+  padding: 10px 0;
+  text-align: center;
+}
+.teacher-card__name {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 15px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.6;
+}
+.teacher-card__position {
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.6;
+}
+
